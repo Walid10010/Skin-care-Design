@@ -1,0 +1,432 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+
+
+@font-face {
+    font-family: "primar";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(res/Signika/Signika-VariableFont_wght.ttf);
+}
+
+
+@font-face {
+    font-family: "sans-semi";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(res/Source_Sans_Pro/SourceSansPro-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "sans-100";
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url(res/Source_Sans_Pro/SourceSansPro-SemiBoldItalic.ttf);
+}
+
+
+@font-face {
+    font-family: "sans-light";
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url(res/Source_Sans_Pro/SourceSansPro-Light.ttf);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header{
+    margin: 2.25rem auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: sticky;
+    align-self: flex-start;
+    top:0;
+    left: 0;
+    z-index: 5;
+    height: 5vh;
+    
+}
+
+
+
+
+
+i {
+    display: block;
+    font-size: 1.25rem;
+    color: black;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    font-family: 'primar';
+   
+}
+
+.container{
+    display: flex;
+}
+
+div h1 {
+    font-family: 'sans-light';
+    margin-left: 0.5rem;
+    font-size: 1.25rem;
+
+
+}
+
+
+h1 {
+    font-family: 'sans-light';
+    font-size: 2rem;
+}
+
+.bag-div{
+    display: flex;
+    align-items: center;
+
+}
+
+.bag-div h2{
+font-family: 'sans-light';
+font-size: 0.8rem;
+ margin-left: 0.35rem;
+ border: lightslategray solid 0.1rem;
+ border-radius: 1000px;
+ padding: 0.25rem;
+}
+
+
+
+.top-img-div {
+    width: 95%;
+    margin: -0.5rem auto;
+    height: 85vh;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.top-img-div img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+   
+   
+}
+.right-side{
+    width: 100%;
+    height: 100%;
+}
+
+.fake-div{
+    height: 100vh;
+    width: 100vw;
+}
+
+.top-left, .top-center, .top-right, .bottom-left, .bottom-center, .bottom-right {
+    overflow: hidden;
+}
+
+.text-div {
+    position:absolute;
+    left: 25%;
+    top:30%;
+    color: white;
+    transform: translate(0%, 25%);
+    z-index: 2;
+    overflow: hidden;
+}
+
+.top-text-div, .bottom-text-div{
+    display: flex;
+}
+.top-img-div p {
+    margin-left: 0.5rem;
+    font-family: 'primar';
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button-div{
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    transform: translate(-50%, 50%);
+    padding: 1rem;
+    background-color: white;
+    border-radius: 50px;
+    font-family: 'sans-light';
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.button-div:hover {
+    transition: all 2s;
+    background-color: black;
+    color: white;
+}
+
+.left-side{
+    width: 0%;
+    height: 100vh;
+    background-color: black;
+     position: relative;
+     z-index: 3;
+     position: sticky;
+     top:0;
+     left: 0;
+     color: wheat;
+     overflow: hidden;
+    
+}
+
+.right-side{
+    border-radius: 50px;
+}
+
+.para-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.para-left-side{
+    margin-top: 10rem;
+    position: relative;
+    width: 25%;
+}
+
+.para-left-top-side-img {
+    display: block;
+    height: 40vh;
+    width: 80%;
+    object-fit: cover;
+    position: absolute;
+    top:50%;
+    left: 65%;
+    transform: translate(-50%, 25%);
+   
+}
+
+
+.para-left-bottom-side-img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.top-img-div {
+    background-color: rebeccapurple;
+}
+
+.para-center{
+    width: 25%;
+    text-align: center;
+}
+
+.para-center h1{
+    font-family: 'sans-light';
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+
+.para-center h2{
+
+    font-family: 'sans-light';
+    font-size: 1rem;
+}
+
+
+.para-center p {
+    text-align: center;
+    font-family: 'sans-light';
+    font-size: 0.8rem;
+}
+
+.para-right-side{
+    margin-top: 20rem;
+    position: relative;
+    width: 25%;
+}
+
+
+.middle-img{
+    margin-top: 2rem;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.middle-img img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover
+}
+
+.right-side{
+    overflow: hidden;
+    background-color: white;
+    
+    
+}
+
+.middle-text{
+    margin-top: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.middle-text h1{
+    font-family: 'sans-light';
+    font-size: 2rem;
+}
+
+
+.right-silder{
+    margin-top: 10rem;
+    display: flex;
+    width: 300%;
+    align-items: center;
+   
+   
+    border-radius: 50px;
+  
+
+}
+
+.img-container{
+    margin-top: 8rem;
+    width: 25vw;
+    height: 95vh;
+    border-radius: 20px;
+    margin-left: 1rem;
+
+  
+}
+
+.img-container img{
+    display: block;
+    width: 25vw;
+    height: 65vh ;
+    
+  
+    object-fit: cover;
+   
+    border-radius: 20px;
+}
+
+
+.left-side-choice {
+   margin-top: 35vh;
+   margin-left: 1rem;
+  
+   
+}
+
+.left-side-choice h1{
+    font-size: 4rem;
+    color: white;
+}
+
+
+.left-side-end {
+    margin-top: 30vh;
+    margin-left: 1rem;
+}
+
+.left-side-end h3{
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'sans-light';
+}
+
+
+.banner-div{
+   position: relative;
+    width: 100%;
+}
+
+
+.img-text{
+    position: absolute;
+    left: 50%;
+    top:-50vh;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    
+    text-align: center;
+    margin-top: -3rem;
+    
+   
+}
+
+.img-text h3{
+    font-size: 0.8rem;
+    font-family: 'sans-light';
+    
+
+}
+
+.img-text h1{
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    
+}
+
+.img-text h2{
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    border-radius: 50px;
+    padding: 0.8rem;
+    background-color: black;
+    color: white;
+}
+
+
+.listen{
+    position: relative;
+}
+.listen-div{
+    left: 50%;
+    position: absolute;
+}
+
+.banner-div{
+    width: 100%;
+    height: 60vh;
+    margin-top: -20vh;
+}
+
+.banner-div img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
